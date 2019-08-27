@@ -209,7 +209,7 @@ bindsym $win+z exec playerctl play-pause
 bindsym $win+x exec playerctl next
 bindsym $win+c exec playerctl previous
 bindsym $win+r exec pulseaudio -k
-bindsym $mod+F4 exec systemctl suspend
+bindsym $win+F4 exec systemctl suspend
 
 # Dual monitor
 bindsym $mod+p exec $HOME/.config/i3/change1080.sh; exec $HOME/.config/polybar/launch1080.sh
