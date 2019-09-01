@@ -17,10 +17,15 @@ set PATH $ANDROID_HOME/tools :$PATH
 set PATH $ANDROID_HOME/tools/bin :$PATH
 set PATH $ANDROID_HOME/platform-tools :$PATH
 
+
+
 function gp
         git push
 end
 
+function gs
+        git status
+end
 function update
         git pull --rebase
 end
@@ -31,4 +36,8 @@ end
 
 function ga
         git add 
+end
+
+function update
+        git pull --rebase
 end
