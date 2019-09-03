@@ -7,9 +7,8 @@ alias pacman="sudo pacman"
 alias openvpn="sudo openvpn"
 alias docker186="docker run -v ~/CS/CS186:/cs186 -it cs186/environment bash"
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-source /home/brian/miniconda2/etc/fish/conf.d/conda.fish
-
-set PATH /home/brian/miniconda2/bin :$PATH
+source /home/brian/anaconda3/etc/fish/conf.d/conda.fish
+set PATH /home/brian/anaconda3/bin :$PATH
 
 set ANDROID_HOME $HOME/Android/Sdk
 set PATH $ANDROID_HOME/emulator :$PATH
