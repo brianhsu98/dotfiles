@@ -199,7 +199,6 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $win+z exec playerctl play-pause
 bindsym $win+x exec playerctl next
 bindsym $win+c exec playerctl previous
-bindsym $win+r exec pulseaudio -k
 bindsym $win+F4 exec systemctl suspend
 
 # Dual monitor
@@ -233,4 +232,5 @@ exec --no-startup-id redshift
 exec --no-startup-id /usr/lib/notification-daemon-1.0/notification-daemon
 
 exec --no-startup-id libinput-gestures
+exec dbus-launch --autolaunch=$(cat /var/lib/dbus/machine-id) i3
 
