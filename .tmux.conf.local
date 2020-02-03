@@ -314,6 +314,6 @@ bind / command-prompt choose-tree
 set-option repeat-time 0
 
 # Set f to fullscreen
-bind f run 'cut -c3- ~/.tmux.conf | sh -s _maximize_pane "#{session_name}" #D'
+bind f command-prompt resize-pane -Z
 
 

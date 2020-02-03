@@ -6,6 +6,8 @@ set fish_greeting
 set -x EDITOR vim
 # Adding rust stuff to PATH
 source ~/.cargo/env
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 
 function gp
         git push
