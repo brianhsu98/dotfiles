@@ -308,12 +308,13 @@ bind q killp
 bind C-q killw
 
 # Show the selectable window chooser 
-bind / command-prompt choose-tree
+bind / command-prompt "find-window '%1'"
+
+bind . command-prompt "rename-session %1"
 
 # Removing key repeat time
 set-option repeat-time 0
 
 # Set f to fullscreen
-bind f command-prompt resize-pane -Z
-
+bind f resize-pane -Z
 
