@@ -299,10 +299,21 @@ set -g mode-keys vi
 bind v copy-mode
 # change enter to split vertically
 bind Enter split-window -h
-
-# if run as tmux aattach, create a session if one does not exist
+# if run as tmux attach, create a session if one does not exist
 new-session -n $HOST
 
-# change f to maximize
-bind / list-sessions
+# Kill current pane with q
+bind q killp
+# Kill window with control-Q
+bind C-q killw
+
+# Show the selectable window chooser 
+bind / command-prompt choose-tree
+
+# Removing key repeat time
+set-option repeat-time 0
+
+# Set f to fullscreen
+bind f run 'cut -c3- ~/.tmux.conf | sh -s _maximize_pane "#{session_name}" #D'
+
 
