@@ -1,7 +1,5 @@
 alias c="cd ~/courses"
 alias vir="ssh panda@192.3.59.138 -p 24011"
-alias d100="cd ~/CS/data100"
-alias 162="cd ~/CS/CS162"
 alias pacman="sudo pacman"
 alias openvpn="sudo openvpn"
 alias docker186="docker run -v ~/CS/CS186:/cs186 -it cs186/environment bash"
